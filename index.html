@@ -23,7 +23,7 @@
             <a href="#" class="active">Home</a>
             <a href="#products">Products</a>
             <a href="#">Offers</a>
-            <a href="#">Contact</a>
+            <a href="#footer-grid">Contact</a>
         </nav>
         <div class="header-right">
             <div class="search-bar">
@@ -32,6 +32,7 @@
             </div>
             <a href="#" class="cart-icon" id="cart-btn"><i class="fas fa-shopping-cart"></i><span
                     class="cart-count">0</span></a>
+            <a href="login.html" class="login-btn" id="login-btn"><i class="fas fa-user"></i> Login</a>
         </div>
     </header>
 
@@ -64,8 +65,10 @@
                     <div class="card-price">
                         <span class="price-current">₹1,499</span>
                         <span class="price-original">₹2,999</span>
+
                     </div>
-                    <button id="buy-headphones"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    <button id="buy-headphones" onclick="alert('Item added to cart')"><i
+                            class="fas fa-shopping-bag"></i>Add to Cart</button>
                 </div>
             </div>
 
@@ -86,7 +89,8 @@
                         <span class="price-current">₹2,499</span>
                         <span class="price-original">₹4,999</span>
                     </div>
-                    <button id="buy-smartwatch"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    <button id="buy-smartwatch" onclick="alert('Item added to cart')"><i
+                            class="fas fa-shopping-bag"></i> Add to Cart</button>
                 </div>
             </div>
 
@@ -107,7 +111,8 @@
                         <span class="price-current">₹1,999</span>
                         <span class="price-original">₹3,499</span>
                     </div>
-                    <button id="buy-speaker"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    <button id="buy-speaker" onclick="alert('Item added to cart')"><i class="fas fa-shopping-bag"></i>
+                        Add to Cart</button>
                 </div>
             </div>
 
@@ -128,14 +133,81 @@
                         <span class="price-current">₹1,999</span>
                         <span class="price-original">₹3,199</span>
                     </div>
-                    <button id="buy-mouse"><i class="fas fa-shopping-bag"></i> Add to Cart</button>
+                    <button id="buy-mouse" onclick="alert('Item added to cart')"><i class="fas fa-shopping-bag"></i> Add
+                        to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" id="product-earphone">
+                <div class="card-badge new">New</div>
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1590658268037-6bf12f032f55?w=500"
+                        alt="Premium Earphones" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3>Premium Earphones</h3>
+                    <div class="card-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <span>(184)</span>
+                    </div>
+                    <div class="card-price">
+                        <span class="price-current">₹899</span>
+                        <span class="price-original">₹1,799</span>
+                    </div>
+                    <button id="buy-earphone" onclick="alert('Item added to cart')"><i
+                            class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" id="product-charger">
+                <div class="card-badge hot">Hot</div>
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=500"
+                        alt="Fast Charger Adapter" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3>Fast Charger Adapter</h3>
+                    <div class="card-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="far fa-star"></i>
+                        <span>(142)</span>
+                    </div>
+                    <div class="card-price">
+                        <span class="price-current">₹699</span>
+                        <span class="price-original">₹1,299</span>
+                    </div>
+                    <button id="buy-charger" onclick="alert('Item added to cart')"><i
+                            class="fas fa-shopping-bag"></i> Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="card" id="product-powerbank">
+                <div class="card-badge">Trending</div>
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=500"
+                        alt="Power Bank 20000mAh" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <h3>Power Bank 20000mAh</h3>
+                    <div class="card-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                        <span>(256)</span>
+                    </div>
+                    <div class="card-price">
+                        <span class="price-current">₹1,299</span>
+                        <span class="price-original">₹2,499</span>
+                    </div>
+                    <button id="buy-powerbank" onclick="alert('Item added to cart')"><i
+                            class="fas fa-shopping-bag"></i> Add to Cart</button>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="footer-grid">
+        <div class="footer-grid" id="footer-grid">
             <div class="footer-col">
                 <h3><i class="fas fa-bolt"></i> ElectroMart</h3>
                 <p>Your one-stop destination for premium electronics and smart gadgets.</p>
